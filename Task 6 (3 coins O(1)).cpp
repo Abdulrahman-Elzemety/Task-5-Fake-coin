@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int coin1;
+    int coin2;
+    int coin3;
+
+    cout << "Enter weight of coin 1: ";
+    cin >> coin1;
+
+    cout << "Enter weight of coin 2: ";
+    cin >> coin2;
+
+    cout << "Enter weight of coin 3: ";
+    cin >> coin3;
+
+
+    if (coin1 == coin2) {
+        if (coin3 > coin1)
+            cout << "The fake coin is heavier.\n";
+        else 
+            cout << "The fake coin is lighter.\n";
+    }
+    else if (coin1 > coin2) {
+        if (coin1 > coin3)
+            cout << "The fake coin is heavier.\n";
+        else
+            cout << "The fake coin is lighter.\n";
+    }
+    else if (coin2 > coin1) {
+        if (coin2 > coin3)
+            cout << "The fake coin is heavier.\n";
+        else
+            cout << "The fake coin is lighter.\n";
+    }
+}
